@@ -1,0 +1,104 @@
+.i-headerWrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.i-left { 
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.i-leftWrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.i-intro {
+  font-size: 30px;
+  color: orange;
+  font-weight: bold;
+  text-align: left;
+}
+
+.i-name {
+  font-size: 30px;
+  padding: 1px;
+  text-align: left;
+  width: 75%;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-titleWrapper {
+  height: 100%;
+  animation: move 6s ease-in-out infinite alternate;
+  margin: 3px;
+
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #59b256;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  75% {
+    transform: translateY(-150px);
+  }
+
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-description {
+  font-size: 18px;
+  font-weight: 450;
+  color: orange;
+  text-align: left;
+}
+
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #59b256;
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.i-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
